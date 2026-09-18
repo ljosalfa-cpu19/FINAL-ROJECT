@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome, My Love — Midnight Rose</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="welcome">
+<div class="sky-bg"></div>
+<div class="vignette"></div>
+<div id="transition-veil" aria-hidden="true"></div>
+
+<main class="stage">
+  <div class="stage-inner page-fade">
+    <h1 class="welcome-title">Hi, My Love&nbsp;♡</h1>
+    <p class="welcome-sub">I made a little something for you...</p>
+    <p class="welcome-line">This is for you Alyy!!</p>
+    <a href="letter-intro.html" class="btn" data-transition>Continue&nbsp;♡</a>
+  </div>
+</main>
+
+<script>
+  if (sessionStorage.getItem("midnightRoseUnlocked") !== "true") {
+    window.location.replace("lock1.html");
+  }
+</script>
+<script src="js/main.js"></script>
+<script src="js/autoplay-music.js"></script>
+
+<audio id="bg-music" loop src="song.mp3" preload="auto"></audio>
+</body>
+</html>
